@@ -13,6 +13,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
 
+    <!-- font awosome icon -->
+    <script src="https://kit.fontawesome.com/268135ad7c.js" crossorigin="anonymous"></script>
+    <!-- tailwind coustome color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'main-color': '#F85559',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- custom style -->
     <style>
         .font-lato {
             font-family: 'Lato', sans-serif;
@@ -22,8 +38,40 @@
 </head>
 
 <body class="font-lato">
-    
-    <header>
+
+    <header class="container mx-auto">
+        <!-- navbar start -->
+        <nav class="mx-40">
+            <div class="navbar bg-main-color rounded-[600px] py-5 px-12 mt-10">
+                <!-- left side -->
+                <div class="navbar-start text-white font-medium text-lg">
+                    <ul class="flex gap-7">
+                        <li>Home</li>
+                        <li>About Us</li>
+                        <li>Shop</li>
+                        <li>All Fruits</li>
+                    </ul>
+                </div>
+
+                <!-- middle -->
+                <div class="navbar-center">
+                    <img src="./images/logo.png" alt="">
+                    <p class="font-bold text-4xl text-white pl-3">Fruit Burst</p>
+                </div>
+
+                <!-- right -->
+                <div class="navbar-end rounded-[50px] relative">
+                    <input type="text" placeholder="Type here" class="input input-bordered input-sm rounded-[50px] " />
+                    <div class="absolute right-4">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </nav>
+
 
     </header>
     <main>
