@@ -78,6 +78,63 @@
             </nav>
         </div>
 
+        <!-- new navbar for small device that will hidden in large device -->
+
+        <div class="lg:hidden block">
+            <div class="navbar bg-base-100 lg:bg-bg-primary rounded-full lg:px-12 py-5 lg:mb-14">
+                <!-- visible part -->
+                <div class="navbar-start">
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1 text-lg font-medium text-white">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost sm:hidden flex items-center ml-auto">
+                        <div class="flex items-center gap-2">
+                            <img src="images/logo.png" class="h-[30px] w-[22px]" alt="">
+                            <p class="text-xl ">Fruit Burst</p>
+                        </div>
+                    </a>
+                </div>
+                <a class="navbar-center max-w-xs hidden sm:block">
+                    <div class="flex items-center gap-2">
+                        <img src="images/logo.png" class="h-[54px] w-[60px]" alt="">
+                        <p class="text-4xl font-bold text-white">Fruit Burst</p>
+                    </div>
+                </a>
+
+                <div class="navbar-end">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                    <input type="email" placeholder="search here"
+                        class="input input-ghost max-w-xs hidden sm:block rounded-3xl bg-white p-4" />
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- new navbar end -->
+
 
         <!-- banner section -->
         <section class="lg:mx-40 mt-5 ">
@@ -199,7 +256,7 @@
                 </div>
                 <div class="flex justify-center items-center text-center space-x-5">
                     <div>
-                        <h1 class="font-extrabold text-5xl">29</h1>
+                        <h1 class="font-extrabold  text-5xl">29</h1>
                         <p class="font-medium text-base ">Days</p>
                     </div>
                     <i class="fa-solid fa-ellipsis-vertical"></i>
@@ -222,7 +279,7 @@
             <!-- cards section -->
             <div class="lg:flex justify-center mb-12">
                 <!-- 1st card -->
-                <div class="card bg-base-100 shadow-xl mr-6 mb-3 px-3">
+                <div class="card bg-base-100 shadow-xl lg:mr-6 mb-3 px-3">
                     <figure class="px-10 pt-10">
                         <img src="images/fruit6.png" alt="Orange" class="rounded-xl" />
                     </figure>
@@ -294,7 +351,7 @@
                 </div>
 
                 <!-- 2nd -->
-                <div class="card bg-base-100 shadow-xl mr-6 mb-3 px-3">
+                <div class="card bg-base-100 shadow-xl lg:mr-6 mb-3 px-3">
                     <figure class="px-10 pt-10">
                         <img src="images/fruit7.png" alt="Orange" class="rounded-xl" />
                     </figure>
@@ -366,7 +423,7 @@
                 </div>
 
                 <!-- 3rd -->
-                <div class="card bg-base-100 shadow-xl mr-6 mb-3 px-3">
+                <div class="card bg-base-100 shadow-xl lg:mr-6 mb-3 px-3">
                     <figure class="px-10 pt-10">
                         <img src="images/fruit8.png" alt="Red Dragon" class="rounded-xl" />
                     </figure>
@@ -437,7 +494,7 @@
 
                 </div>
                 <!-- 4th -->
-                <div class="card bg-base-100 shadow-xl mr-6 mb-3 px-3">
+                <div class="card bg-base-100 shadow-xl lg:mr-6 mb-3 px-3">
                     <figure class="px-10 pt-10">
                         <img src="images/fruit9.png" alt="Banana" class="rounded-xl" />
                     </figure>
